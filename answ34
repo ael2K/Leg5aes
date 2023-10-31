@@ -1,0 +1,14 @@
+1 да (энвайрмент в compose например)
+2 да (configmap ?)
+3 The main limit is Certificates per Registered Domain (50 per week).
+4 Можно увеличить ;-) You can create a maximum of 300 New Orders per account per 3 hours. A new order is created each time you request a certificate from the Boulder CA, meaning that one new order is produced in each certificate request. Exceeding the New Orders limit is reported with the error message too many new orders recently.
+  Изменить архитектуру приложения с постановкой задачи по уменьшению выпуска сертов.
+  Купить центр сертификации.
+  
+5 Согласно документации YC (cкрестил бы terraform и  managing-custom-resources)
+ https://cloud.yandex.ru/docs/network-load-balancer/operations/internal-lb-create
+ https://developer.hashicorp.com/terraform/tutorials/kubernetes/kubernetes-provider#managing-custom-resources
+( простого ответа типа create balance > new_tr3 & start service я не знаю.
+6 В документации написано что нельзя но можно сделать invalid rules owerhook
+ 
+These rules are automatically approved to unblock their respective merge requests, unless they were created through a scan result policy. Invalid approval rules created through a scan result policy are presented with Action required and are not automatically approved, blocking their respective merge requests.
